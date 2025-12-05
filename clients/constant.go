@@ -145,6 +145,8 @@ const (
 	RemoveFirmwareBaseline = "/api/UpdateService/Actions/UpdateService.RemoveBaselines"
 	// DeviceComplianceReportAPI gets the details of a specific compliance report
 	DeviceComplianceReportAPI = "/api/UpdateService/Actions/UpdateService.GetBaselinesReportByDeviceids"
+	FabricAPI                 = "/api/NetworkService/Fabrics"
+	UplinkAPI                 = "/api/NetworkService/Fabrics('%s')/Uplinks"
 )
 
 // Messages constants
@@ -310,6 +312,11 @@ const (
 	ErrGnrDeleteDiscovery = "error deleting a discovery"
 	// ErrDiscoveryJobIsRunning - device capablity
 	ErrDiscoveryJobIsRunning = "job with id %d is already running please wait for sometime and try again"
+	ErrGnrCreateVlanNetwork  = "error creating a vlan network"
+	ErrGnrUpdateVlanNetwork  = "error updating a vlan network"
+	ErrGnrDeleteVlanNetwork  = "error deleting a vlan network"
+	ErrGnrReadVlanNetwork    = "error reading a vlan network"
+	ErrUpdateUplink          = "error updating uplink"
 )
 
 // FailureStatusIDs - list of failure status IDs from OME for a job

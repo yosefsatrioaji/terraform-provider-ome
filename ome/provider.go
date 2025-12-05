@@ -266,6 +266,8 @@ func (p *omeProvider) Resources(ctx context.Context) []func() resource.Resource 
 		NewDeviceActionResource,
 		NewFirmwareCatalogResource,
 		NewFirmwareBaselineResource,
+		NewVlanNetworkResource,
+		NewUplinkUpdateResource,
 	}
 }
 
@@ -281,6 +283,8 @@ func (p *omeProvider) DataSources(ctx context.Context) []func() datasource.DataS
 		NewFirmwareBaselineComplianceRepositoryDatasource,
 		NewfwBaselineCompReportDatasource,
 		NewDeviceComplianceReportDataSource,
+		NewFabricDataSource,
+		NewUplinkDataSource,
 	}
 }
 

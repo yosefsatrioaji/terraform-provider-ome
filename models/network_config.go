@@ -42,3 +42,20 @@ type VLanNetworksTfsdk struct {
 	Type              types.Int64  `tfsdk:"type"`
 	InternalRefNWUUID types.String `tfsdk:"internal_ref_nwuu_id"`
 }
+
+type CreateVlanNetwork struct {
+	Name        string `json:"Name"`
+	Description string `json:"Description"`
+	VLANMaximum int64  `json:"VlanMaximum"`
+	VLANMinimum int64  `json:"VlanMinimum"`
+	Type        int64  `json:"Type"`
+}
+
+type UpdateVlanNetwork struct {
+	ID          int64  `json:"Id"`
+	Name        string `json:"Name"`
+	Description string `json:"Description"`
+	VLANMaximum int64  `json:"VlanMaximum"`
+	VLANMinimum int64  `json:"VlanMinimum"`
+	Type        int64  `json:"Type"`
+}
